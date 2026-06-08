@@ -7,6 +7,8 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 // import { authService } from '@/shared/api/authService';
 // import { apiClient } from '@/shared/api/client';
+const authService = {} as any;
+const apiClient = {} as any;
 import { setSession, clearSession, type SessionUser } from '@/lib/auth';
 
 export interface AuthState {
