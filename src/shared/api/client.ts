@@ -1,10 +1,10 @@
 // src/shared/api/client.ts
 export const apiClient = {
-  get: async (url: string, options?: any) => {
+  get: async <T = any>(url: string, options?: any): Promise<T> => {
     const res = await fetch(url, options);
     return res.json();
   },
-  post: async (url: string, data: any, options?: any) => {
+  post: async <T = any>(url: string, data: any, options?: any): Promise<T> => {
     const res = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', ...options?.headers },
