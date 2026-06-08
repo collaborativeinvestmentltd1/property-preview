@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { apiClient } from '@/shared/api/client';
+import { apiClient } from '../shared/api/client';
 
 export interface UseFetchOptions {
   skip?: boolean;
